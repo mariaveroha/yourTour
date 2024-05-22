@@ -17,12 +17,12 @@
             <img class="logo" src="./images/YourTour.svg" />
             <img class="logo black-logo" src="./images/black_logo.svg" />
             <div class="header__items">
-                <p>Туры</p>
-                <p>Создать тур</p>
-                <p>Отзывы</p>
-                <p>Истории</p>
+                <a href="#tours">Туры</a>
+                <a href="#create-tour">Создать тур</a>
+                <a href="#review">Отзывы</a>
+                <a href="#history">Истории</a>
             </div>
-            <p>+7 999 999 99 99</p>
+            <a href="tel:+79999999999">+7 999 999 99 99</a>
         </div>
         <div class="header__banner">
             <p class="header__title">Идеальные путешествия существуют</p>
@@ -31,7 +31,7 @@
         </div>
     </header>
     <div class="main">
-        <div class="list">
+        <div  id="tours" class="list">
             <h2 class="list__title">Выбери свой тур</h2>
             <div class="list__tabs">
                 <p class="tab-active">Популярные</p>
@@ -110,7 +110,7 @@
 
             </div>
         </div>
-        <div class="form-block">
+        <div  id="create-tour" class="form-block">
             <h2 class="block-title">Собери свой тур</h2>
             <p class="block-subtitle">Идейные соображения высшего порядка, а также рамки и место обучения кадров</p>
             <form class="form">
@@ -148,7 +148,7 @@
                 </div>
                 <div class="form__item item_comment">
                     <label for="comment" class="item_title">Комментарий</label>
-                    <input id="comment" class="form__input-comment" />
+                    <textarea id="comment" class="form__input-comment"></textarea>
                 </div>
                 <div class="form__radio">
                     <p class="item_title">Вам есть 18 лет?</p>
@@ -174,7 +174,7 @@
                 </div>
             </form>
         </div>
-        <div class="reviews">
+        <div id="review" class="reviews">
             <h2 class="block-title">Отзывы наших путешественников</h2>
             <p class="block-subtitle">Идейные соображения высшего порядка, а также рамки и место обучения кадров</p>
             <div class="reviews__cards">
@@ -230,7 +230,7 @@
                 <img class="gallery__item hide" src="./images/travel photo-12.webp" />
             </div>
         </div>
-        <div class="list-history">
+        <div id="history" class="list-history">
             <h2 class="block-title">Истории путешествий</h2>
             <p class="block-subtitle">Идейные соображения высшего порядка, а также рамки и место обучения кадров</p>
             <div class="list-history__cards">
@@ -308,7 +308,7 @@
             <div class="email_info">
                 <p class="email_title">Пора в путешествие вместе с нами!</p>
                 <p class="email_subtitle">Напиши на почту и узнай подробности на
-                    <button class="email_btn">yourtour@gmail.com </button>
+                    <a href="mailto:yourtour@gmail.com" class="email_btn">yourtour@gmail.com </a>
                 </p>
             </div>
 
@@ -317,18 +317,18 @@
             <div class="navigation__container">
                 <p class="navigation__title">Наши социальные сети</p>
                 <div class="social">
-                    <div class="navigation__social">
+                    <button class="navigation__social">
                         <img class="social_icon" src="./images/inst.svg" />
                         <p class="social_name">instagram</p>
-                    </div>
-                    <div class="navigation__social">
+                    </button>
+                    <button class="navigation__social">
                         <img class="social_icon" src="./images/fb.svg" />
                         <p class="social_name">facebook</p>
-                    </div>
-                    <div class="navigation__social">
+                    </button>
+                    <button class="navigation__social">
                         <img class="social_icon" src="./images/vk.svg" />
                         <p class="social_name">vkontakte</p>
-                    </div>
+                    </button>
                 </div>
 
             </div>
