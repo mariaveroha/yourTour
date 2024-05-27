@@ -7,7 +7,7 @@ const header = document.querySelector('.header__navigation')
 const logo = document.querySelector('.logo')
 const logoBlack = document.querySelector('.black-logo')
 const tel = document.getElementById('tel')
-
+const link = document.querySelector('.hidden_link')
 function mask(event) {
     event.keyCode && (keyCode = event.keyCode);
     let pos = this.selectionStart;
@@ -52,12 +52,14 @@ window.addEventListener('scroll', function () {
         header.classList.add('header_fixed')
         logo.classList.add('black-logo')
         logoBlack.classList.add('logo')
+        link.style.display = 'block'
         logoBlack.classList.remove('black-logo')
     }
     else {
         header.classList.remove('header_fixed')
         logo.classList.remove('black-logo')
         logoBlack.classList.remove('logo')
+        link.style.display = 'none'
         logoBlack.classList.add('black-logo')
     }
 })

@@ -26,15 +26,22 @@
                 width: 360px;
                 height: 488px;
             }
+            @media screen and (max-width: 359px) {
+                max-width: 359px;
+                width: 100%;
+            }
             .logo {
                 display: block;
                 width: 181.84px;
                 cursor: pointer;
                @media screen and (max-width: 360px) {
                     width: 133px;
+                }
+                @media screen and (max-width: 359px) {
+                    width: 32vw;
                 } 
             }
-            .black-logo {
+            .black-logo, .hidden_link {
                 display: none;
             }
             .header__navigation {
@@ -64,7 +71,7 @@
                     column-gap: 63px;
                     justify-content: center;
                 }
-                a {
+                .header__item {
                     cursor: pointer;
                     height: 28px;
                     @include font(white, 20px, 400, 28.4px);
@@ -89,6 +96,9 @@
                     }
                    @media screen and (max-width: 360px) {
                         text-wrap: nowrap;
+                    }
+                    @media screen and (max-width: 359px) {
+                        font-size: 18px;
                     }
                 }
                 .header__items {
@@ -144,6 +154,10 @@
                     @include font(white, 32px, 700, 39.08px);
                     width: 360px;
                     margin-top: 143px
+                }
+                @media screen and (max-width: 359px) {
+                    max-width: 359px;
+                    width: 100%;
                 }
             }
             .header__subtitle {
@@ -241,6 +255,10 @@
                     padding: 77px 0;
                     width: 360px;
                 }
+                @media screen and (max-width: 359px) {
+                    max-width: 359px;
+                    width: 100%;
+                }
                 .list__title {
                     @include font(black, 59px, 700, 73.16px);
                     text-align: center;
@@ -251,6 +269,11 @@
                         @include font(black, 34px, 700, 38.08px);
                         width: 360px;
                         letter-spacing: 0.05rem;
+                    }
+                    @media screen and (max-width: 359px) {
+                        max-width: 359px;
+                        width: 100%;
+                        font-size: 30px;
                     }
                 }
                 .list__tabs {
@@ -340,6 +363,7 @@
                     }
                     @media screen and (max-width: 930px) {
                         grid-template-columns: repeat(1, 1fr);
+                        justify-items: center;
                      }
                    @media screen and (max-width: 360px) {
                         row-gap: 18px;
@@ -358,13 +382,16 @@
                             width: 450px;
                         }
                         @media screen and (max-width: 930px) {
-                            width: 90vw;
+                            width: 80vw;
                         }
                        @media screen and (max-width: 360px) {
                             width: 318px;
                             height: 318px;
                             margin: auto;
                             border-radius: 20px;
+                        }
+                        @media screen and (max-width: 359px) {
+                            width: 80vw;
                         }
                         &:hover {
                             .list__image {
@@ -389,12 +416,17 @@
                             object-fit: cover;
                             }
                             @media screen and (max-width: 930px) {
-                                width: 90vw;
+                                width: 80vw;
+                                object-fit: fill;
                             }
                            @media screen and (max-width: 360px) {
                                 width: 318px;
                                 height: 318px;
                                 border-radius: 20px;
+                                object-fit: cover;
+                            }
+                            @media screen and (max-width: 359px) {
+                                width: 80vw;
                             }
                         }
                         .list__absolute {
@@ -413,7 +445,7 @@
                                 width: 450px;
                             }
                             @media screen and (max-width: 930px) {
-                                width: 90vw;
+                                width: 80vw;
                             }
                            @media screen and (max-width: 360px) {
                                 width: 318px;
@@ -882,6 +914,9 @@
                    @media screen and (max-width: 360px) {
                         width: 318px;
                     }
+                    @media screen and (max-width: 359px) {
+                     font-size: 30px;
+                    }
                 }
                 .block-subtitle {
                     width: 418px;
@@ -932,9 +967,9 @@
                          }
                         &:not(:last-child) {
                             margin-right: 18px;
-                           @media screen and (max-width: 360px) {
+                            @media screen and (max-width: 930px) {
                                 margin-right: auto;
-                            }
+                              }
                         }
                         .reviews__text {
                             @include font(black, 23px, 700, 28.06px);
@@ -964,11 +999,11 @@
                                 }
                                 @media screen and (max-width: 930px) {
                                     width: 80vw;
+                                    position: static;
+                                    margin-top: 40px;
                                  }
                                  @media screen and (max-width: 460px) {
                                     width: 70vw;
-                                    position: static;
-                                    margin-top: 40px;
                                  }
                                @media screen and (max-width: 360px) {
                                   width: 278px;
@@ -1018,6 +1053,10 @@
                             display: none;
                         }
                     }
+                      @media screen and (max-width: 750px) {
+                        column-gap: 10px;
+                        
+                    }
                    @media screen and (max-width: 360px) {
                         column-gap: 16px;
                         row-gap: 20px;
@@ -1034,6 +1073,14 @@
                        @media screen and (max-width: 1024px) {
                             width: 314px;
                         }
+                        @media screen and (max-width: 1000px) {
+                            width: 30vw;
+                            height: 20vw;
+                        }
+                        @media screen and (max-width: 800px) {
+                            width: 35vw;
+                            border-radius: 35px;
+                        }
                        @media screen and (max-width: 360px) {
                             width: 150px;
                             height: 110px;
@@ -1046,6 +1093,14 @@
                         object-fit: cover;
                        @media screen and (max-width: 1024px) {
                             width: 231px;
+                        }
+                        @media screen and (max-width: 1000px) {
+                            width: 22vw;
+                            height: 20vw;
+                        }
+                        @media screen and (max-width: 800px) {
+                            width: 27vw;
+                            border-radius: 35px;
                         }
                        @media screen and (max-width: 360px) {
                             width: 94.33px;
@@ -1074,6 +1129,10 @@
                     width: 360px;
                     padding-bottom: 75px;
                 }
+                @media screen and (max-width: 359px) {
+                    max-width: 359px;
+                    width: 100%;
+                }
                 .list-history__cards {
                     display: flex;
                     flex-direction: column;
@@ -1094,6 +1153,9 @@
                         width: 318px;
                        margin: 50px auto 0;
                        gap: 20px;
+                    }
+                    @media screen and (max-width: 359px) {
+                        width: 80vw;
                     }
                     .card-history {
                         width: 1170px;
@@ -1116,6 +1178,9 @@
                             width: 318px;
                             height: 455px;
                             border-radius: 20px;
+                        }
+                         @media screen and (max-width: 359px) {
+                            width: 80vw;
                         }
                         &:hover {
                             .img-history {
@@ -1185,6 +1250,9 @@
                                @media screen and (max-width: 360px) {
                                     @include font(white, 16px, 400, 22.72px);
                                     width: 263px;
+                                }
+                                 @media screen and (max-width: 359px) {
+                                   font-size: 15px;
                                 }
                             }
                             .history-points {
